@@ -1,0 +1,48 @@
+.welcomePageContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.greetingText {
+    position: absolute;
+    margin-top: 10rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    width: max-content;
+}
+
+.getBytting {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.directTo{
+    position: absolute;
+    margin-top: 10rem;
+    top: -6%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.getByttingButton {
+    position: absolute;
+    top: 47%;
+    left: -27%;
+    width: 78%;
+    background-color: rgb(98 225 143 / 77%);
+    font-size: 1.3vw;
+    height: 39px;
+    border-radius: 1.5rem;
+    transform: translate(50%, 0%);
+}
