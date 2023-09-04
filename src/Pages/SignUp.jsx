@@ -20,7 +20,7 @@ const SignUp = () => {
         email: email,
         password: res.user.reloadUserInfo.passwordHash
       });
-      navigate('/login')
+      navigate('/')
     } catch (err) {
       console.log(err)
     }
