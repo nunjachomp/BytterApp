@@ -46,16 +46,16 @@ nav li {
 }
 
 .titleScreen {
-font-size: 28px;
-position: absolute;
-right: 50%;
-top: 10%;
-transform: translate(50%, 0px);
+  font-size: 28px;
+  position: absolute;
+  right: 50%;
+  top: 10%;
+  transform: translate(50%, 0px);
 }
 
 .myByts {
   position: absolute;
-  right: 10%;
+  right: 8%;
   top: 30%;
   transform: translate(-10%, 0px);
 }
@@ -64,6 +64,13 @@ transform: translate(50%, 0px);
   position: absolute;
   right: 0%;
   top: 30%;
+  transform: translate(-10%, 0px);
+}
+
+.signup {
+  position: absolute;
+  right: 12%;
+  top: 56%;
   transform: translate(-10%, 0px);
 }
 
@@ -140,7 +147,7 @@ textarea {
   border-radius: 1.5rem;
 }
 
-.buttonAdd:disabled{
+.buttonAdd:disabled {
   background-color: rgba(28, 61, 40, 0.77);
   cursor: not-allowed;
 }
@@ -152,19 +159,16 @@ textarea {
   left: 10%;
 }
 
-.buttonDelete {
+.deleteBytButton {
   position: absolute;
-  top: 4%;
-  left: -37%;
-  width: 19%;
-  background-color: rgb(247 61 61 / 77%);
-}
-
-.leftToDo {
-  position: absolute;
-  top: 116%;
-  left: -29%;
-  color: white;
+  top: 84%;
+  right: 1%;
+  font-size: 8px;
+  padding: 0;
+  width: 45px;
+  background-color: rgb(170, 0, 0);
+  --bs-btn-border-color: none;
+  --bs-btn-hover-bg: #15202B;
 }
 
 .individualByt {
@@ -189,35 +193,12 @@ textarea {
   background-color: rgb(52 92 95 / 77%);
 }
 
-.checkbox {
-  position: absolute;
-  top: 2%;
-  left: 1%;
-}
-
 .userName {
   position: absolute;
   left: 5%;
   top: 0%;
   font-size: 12px;
-}
-
-.editButton {
-  position: absolute;
-  top: 76%;
-  right: 2px;
-}
-
-.edit {
-  background-color: rgb(233 163 104);
-  border-radius: 2rem;
-}
-
-.noteTitle {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  
 }
 
 .date {
@@ -236,20 +217,16 @@ textarea {
   color: white;
   text-align: start;
   word-break: break-word;
+  text-align: center;
 }
 
-.modal-content {
-  background-color: #3cb36cd1;
-}
-
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 15px;
-  background-color: rgba(185, 240, 250, 0.123);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(185, 240, 250, 0.295);
+.image {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 2rem;
 }
 
 .spinner-border {
@@ -257,3 +234,68 @@ textarea {
   top: 50%;
   left: 50%;
 }
+
+@media (max-width: 850px) {
+
+  .titleScreen {
+    font-size: 12px;
+    width: 194px;
+    top: 25%;
+  }
+
+  .trending {
+    font-size: 8px;
+    left: 1%;
+    top: 32%;
+  }
+
+  .login {
+    position: absolute;
+    font-size: 8px;
+    right: 0.5%;
+    top: 21%;
+  }
+
+  .myByts {
+    font-size: 8px;
+    top: 54%;
+    right: -4%;
+  }
+
+  .charRemaining {
+    font-size: 10px;
+  }
+
+  .date {
+    font-size: 5px;
+  }
+
+  .userName {
+    font-size: 8px;
+  }
+
+  .note {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .buttonAdd {
+    top: 73%;
+    right: 7%;
+    width: 31%;
+    height: 28px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  .individualByt {
+    width: 85%;
+    transform: translate(8%, 0%);
+    height: 90px;
+  }
+
+  .container {
+    width: 85%;
+    height: 136px;
+  }
+}  

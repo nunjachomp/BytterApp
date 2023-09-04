@@ -6,7 +6,7 @@ export default function BytList() {
   const { tweets } = useContext(BytContext);
   return ( //tweets is the state from the App.jsx fetch GET request that will be displayed
     <div>
-      {tweets.map((byt, id) => (
+      {tweets.sort((a, b) => new Date(b.date) - new Date(a.date)).map((byt, id) => (
         <BytMessage key={id} byt={byt} />
       ))}
     </div>

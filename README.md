@@ -1,6 +1,9 @@
-# Welcome to the Bytter Messaging App!
+# Welcome to the Bytter App!
 
-Are you tired of all the Twitter drama? Join the BytterVerse and make your voice heard, without all the background noise!
+Tired of Twitter (X) and all of the drama?
+Leave the noise behind!
+
+Join the BytterVerse and Be Heard!
 
 Website:
 https://bytterapp.web.app/
