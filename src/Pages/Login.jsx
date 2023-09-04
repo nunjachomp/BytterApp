@@ -24,15 +24,15 @@ const Login = () => {
     } catch (err) {
       console.log(err)
     }
-    navigate('/home')
+    navigate('/all-a-byt-me')
   }
 
 
   return (
     <form className="outerLoginContainer" onSubmit={handleLogin}>
-      <div className="loginWelcome">Welocome to Bytter™! <br/>The Loud Speaker of the internet!</div>
+      <div className="loginWelcome">Welcome to Bytter™! <br/>The Loud Speaker of the internet!</div>
       <div className="loginContainer">
-        <div className="loginText">Login Bro</div>
+        <div className="loginText">Login</div>
         <div className="loginInputBox">
           <input type="email" className="loginUserName" placeholder="email@mail.com" value={email} onChange={e => setEmail(e.target.value)}></input>
           <input type="password" className="loginPassword" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)}></input>
