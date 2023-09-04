@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #15202B;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  border-top: 3px solid #B79B4E;
+  border-bottom: 3px solid #B79B4E;
+  border-width: 0.2rem;
+  position: fixed;
+  z-index: 10;
+  top: 0.2rem;
+  left: 0;
+  width: 100%;
+  background-color: #236A47;
+  background-image: url(../src/Images/totk.png);
+  height: 64px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+nav li {
+  display: flex;
+}
+
+.trending {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: translate(-10%, 0px);
+}
+
+.titleScreen {
+  font-size: 28px;
+  position: absolute;
+  right: 50%;
+  top: 10%;
+  transform: translate(50%, 0px);
+}
+
+.myByts {
+  position: absolute;
+  right: 8%;
+  top: 30%;
+  transform: translate(-10%, 0px);
+}
+
+.login {
+  position: absolute;
+  right: 0%;
+  top: 30%;
+  transform: translate(-10%, 0px);
+}
+
+.signup {
+  position: absolute;
+  right: 12%;
+  top: 56%;
+  transform: translate(-10%, 0px);
+}
+
+nav a {
+  display: flex;
+  padding-inline: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 14px;
+  color: #eccd98
+}
+
+nav a:hover {
+  color: #df9b26;
+}
+
+nav span {
+  color: #eccd98;
+  font-weight: 900;
+  text-shadow: -1px 0 #b6ab8f, 0 1px #b6ab8f, 1px 0 #b6ab8f, 0 -1px #b6ab8f;
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  height: 160px;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 15px 1px rgb(121 121 121 / 100%);
+  margin-bottom: 1rem;
+  margin-top: 6rem;
+}
+
+.title {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: -21%;
+  background-color: rgb(196 217 255 / 77%);
+}
+
+textarea {
+  width: 95%;
+  height: 60%;
+  position: absolute;
+  top: 6%;
+  left: 2.5%;
+  color: black;
+  border-radius: 0.5rem;
+  background-color: rgb(23 31 37 / 25%);
+  color: white;
+  text-align: center;
+}
+
+.charRemaining {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  color: white;
+}
+
+.buttonAdd {
+  position: absolute;
+  top: 71%;
+  right: 5%;
+  width: 23%;
+  background-color: rgb(98 225 143 / 77%);
+  font-size: 1.3vw;
+  height: 39px;
+  border-radius: 1.5rem;
+}
+
+.buttonAdd:disabled {
+  background-color: rgba(28, 61, 40, 0.77);
+  cursor: not-allowed;
+}
+
+.exceededCharError {
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.deleteBytButton {
+  position: absolute;
+  top: 84%;
+  right: 1%;
+  font-size: 8px;
+  padding: 0;
+  width: 45px;
+  background-color: rgb(170, 0, 0);
+  --bs-btn-border-color: none;
+  --bs-btn-hover-bg: #15202B;
+}
+
+.individualByt {
+  height: 130px;
+  text-align: center;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 2px 2px rgb(121 121 121 / 42%);
+  margin-top: 1rem;
+  width: 50%;
+  transform: translate(50%, 0%);
+}
+
+.boxBoy {
+  width: 95%;
+  height: 87%;
+  position: absolute;
+  top: 6%;
+  left: 2.5%;
+  color: black;
+  border-radius: 0.5rem;
+  background-color: rgb(52 92 95 / 77%);
+}
+
+.userName {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+  font-size: 12px;
+  
+}
+
+.date {
+  font-size: 10px;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+
+.note {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 90%;
+  color: white;
+  text-align: start;
+  word-break: break-word;
+  text-align: center;
+}
+
+.image {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 2rem;
+}
+
+.spinner-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media (max-width: 850px) {
+
+  .titleScreen {
+    font-size: 12px;
+    width: 194px;
+    top: 25%;
+  }
+
+  .trending {
+    font-size: 8px;
+    left: 1%;
+    top: 32%;
+  }
+
+  .login {
+    position: absolute;
+    font-size: 8px;
+    right: 0.5%;
+    top: 21%;
+  }
+
+  .myByts {
+    font-size: 8px;
+    top: 54%;
+    right: -4%;
+  }
+
+  .charRemaining {
+    font-size: 10px;
+  }
+
+  .date {
+    font-size: 5px;
+  }
+
+  .userName {
+    font-size: 8px;
+  }
+
+  .note {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .buttonAdd {
+    top: 73%;
+    right: 7%;
+    width: 31%;
+    height: 28px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  .individualByt {
+    width: 85%;
+    transform: translate(8%, 0%);
+    height: 90px;
+  }
+
+  .container {
+    width: 85%;
+    height: 136px;
+  }
+}  

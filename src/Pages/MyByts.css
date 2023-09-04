@@ -1,0 +1,117 @@
+.outerUserNameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Images/culex.gif);
+    opacity: 70%;
+}
+
+.introUserNameTest {
+    margin-top: 6rem;
+    position: absolute;
+    top: 5%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    text-shadow: 1px 3px 2px black, 0px 0px 1em #fdffff, 0 0 1.2em #ffffff;
+}
+
+.addUserNameBox {
+    display: flex;
+    width: 50%;
+    height: 160px;
+    position: absolute;
+    border-radius: 0.5rem;
+    box-shadow: 1px 3px 15px 1px rgb(121 121 121 / 100%);
+    background-color: rgb(61 111 123 / 85%);
+    margin-bottom: 1rem;
+    margin-top: 11rem;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, 0%);
+}
+
+.addUserName {
+    width: 95%;
+    height: 60%;
+    position: absolute;
+    top: 6%;
+    left: 2.5%;
+    color: black;
+    border-radius: 0.5rem;
+    background-color: rgb(23 31 37 / 60%);
+    color: white;
+    text-align: center;
+    border-color: #f7a927;
+}
+
+.setUserNameButton {
+    position: absolute;
+    top: 71%;
+    right: 5%;
+    width: 23%;
+    background-color: rgb(98 225 143 / 77%);
+    font-size: 1.3vw;
+    height: 39px;
+    border-radius: 1.5rem;
+    border-color: #f7a927;
+}
+
+.currentUser {
+    position: absolute;
+    top: 48%;
+    left: 28%;
+    color: white;
+}
+
+.addProfPicBox {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    width: 210px;
+    height: 100px;
+    transform: translate(-50%, 0%);
+}
+
+.addProfPic {
+    position: absolute;
+    top: 34%;
+    left: 30%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.setProfPicButton {
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    background-color: rgb(98 225 143 / 77%);
+}
+
+@media (max-width: 850px) {
+
+    .introUserNameTest {
+        top: -2%;
+        font-size: 13px;
+    }
+
+    .addUserName {
+        font-size: 10px;
+    }
+
+    .addUserNameBox {
+        height: 85px;
+        top: 3%;
+    }
+
+    .setUserNameButton {
+        top: 67%;
+        width: 30%;
+        height: 26px;
+        font-weight: 700;
+    }
+}
