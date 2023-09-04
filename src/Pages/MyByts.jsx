@@ -3,12 +3,15 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { doc, updateDoc } from "firebase/firestore";
 import { storage, db } from '../index'
 import { UserContext } from "../Context/UserContext";
+import { useNavigate } from "react-router-dom";
 import "./MyByts.css";
 
 const MyByts = () => {
   const {userId, userName} = useContext(UserContext)
   const [userNameText, setUserNameText] = useState(userName || '')
   const [userImage, setUserImage] = useState('')
+
+  const navigate = useNavigate()
  
   const uploadPhotoandUserName = async (e) => {
     e.preventDefault()
@@ -20,6 +23,7 @@ const MyByts = () => {
       image: imageUrl,
       userName: userNameText
     });
+    navigate('/home')
   }
   
   return (
